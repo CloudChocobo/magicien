@@ -15,6 +15,7 @@ public class Magicien implements Ensorcele {
     public void seVanter() {
         System.out.printf("Je suis le grand magicien %s et personne ne peut me vaincre!!\n", this.nom);
     }
+
     public void ajouterCobaye(Ensorcele cobaye) {
         this.cobayes.add(cobaye);
     }
@@ -27,6 +28,14 @@ public class Magicien implements Ensorcele {
             System.out.println("Sortilège sur " + ensorcele);
             ensorcele.recevoirUnSort();
         }
+    }
+
+     public void faireRestition() {
+        System.out.println("\n\n***************************************************************************");
+        System.out.println("OUAH, quelle force !!!");
+        System.out.println("S'ils me demandent de transformer une citrouille en carrosse");
+        System.out.println("J'écris la classe Citrouille et c'est tout");
+        System.out.println("***************************************************************************");
     }
 
     @Override
