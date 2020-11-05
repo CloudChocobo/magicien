@@ -3,12 +3,12 @@ package co.simplon;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Magicien implements Ensorcele {
-    private String nom;
+public class Magicien extends Humain implements Ensorcele {
+
     private Set<Ensorcele> cobayes;
 
     public Magicien(String nom) {
-        this.nom = nom;
+        super(nom);
         this.cobayes = new HashSet<Ensorcele>();
     }
 
@@ -30,7 +30,7 @@ public class Magicien implements Ensorcele {
         }
     }
 
-     public void faireRestition() {
+    public void faireRestition() {
         System.out.println("\n\n***************************************************************************");
         System.out.println("OUAH, quelle force !!!");
         System.out.println("S'ils me demandent de transformer une citrouille en carrosse");
@@ -48,5 +48,4 @@ public class Magicien implements Ensorcele {
         return "Magicien: " + nom;
     }
 
-    
 }

@@ -1,14 +1,15 @@
 package co.simplon;
 
-public class Guerrier implements Ensorcele{
+public class Guerrier extends Humain implements Ensorcele {
 
-    enum Arme {MAIN, BATON, COUTEAU, EPEE};
+    private enum Arme {
+        MAIN, BATON, COUTEAU, EPEE
+    };
 
-    private String nom;
     private Arme arme;
 
     public Guerrier(String nom) {
-        this.nom = nom;
+        super(nom);
         this.arme = Arme.EPEE;
     }
 
@@ -29,6 +30,5 @@ public class Guerrier implements Ensorcele{
     public String toString() {
         return "Guerrier: " + nom;
     }
-    
-    
+
 }
