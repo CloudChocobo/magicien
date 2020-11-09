@@ -24,9 +24,9 @@ public class Magicien extends Humain implements Ensorcele {
         System.out.println("\n********************************************************");
         System.out.printf("* Le grand mage %s lance un sort sur tous ses cobayes\n", this.nom);
         System.out.println("********************************************************");
-        for (Ensorcele ensorcele : cobayes) {
-            System.out.println("Sortilège sur " + ensorcele);
-            ensorcele.recevoirUnSort();
+        for (Ensorcele cobaye : cobayes) {
+            System.out.println("Sortilège sur " + cobaye);
+            cobaye.recevoirUnSort();
         }
     }
 
